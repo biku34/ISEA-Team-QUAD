@@ -1,0 +1,142 @@
+# Forensic Recovery System Configuration
+# Copy this to config.yaml and customize
+
+# Application Settings
+app:
+  name: "NTFS Forensic Recovery System"
+  version: "1.0.0"
+  debug: false
+  host: "0.0.0.0"
+  port: 8000
+  
+# Storage Paths
+storage:
+  evidence_dir: "./storage/evidence"
+  mount_dir: "./storage/mount"
+  recovered_dir: "./storage/recovered"
+  carved_dir: "./storage/carved"
+  temp_dir: "./storage/temp"
+  artifacts_dir: "./storage/artifacts"  # Phase 1: NTFS artifact extraction output
+  
+# Database Configuration
+database:
+  url: "sqlite:///./forensic_recovery.db"
+  echo: false  # Set to true for SQL debugging
+  pool_size: 10
+  max_overflow: 20
+  
+# Forensic Tools Paths
+forensic_tools:
+  ewfmount: "/usr/bin/ewfmount"
+  ewfunmount: "/usr/bin/fusermount"
+  mmls: "/usr/bin/mmls"
+  fls: "/usr/bin/fls"
+  icat: "/usr/bin/icat"
+  scalpel: "/usr/bin/scalpel"
+  sha256sum: "/usr/bin/sha256sum"
+  
+# Mount Options
+mount:
+  options: "ro,noexec,nodev,nosuid"
+  timeout: 300  # seconds
+  auto_unmount: true
+  
+# File Carving Configuration
+carving:
+  scalpel_config: "./config/scalpel.conf"
+  max_file_size: 104857600  # 100MB default max
+  enabled_types:
+    - jpg
+    - png
+    - pdf
+    - docx
+    - xlsx
+    - zip
+    
+# Hash Verification
+hashing:
+  algorithm: "sha256"
+  verify_on_upload: true
+  buffer_size: 65536  # 64KB chunks
+  
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "./logs/forensic_recovery.log"
+  max_size: 104857600  # 100MB
+  backup_count: 5
+  format: "{time:YYYY-MM-DD HH:mm:ss.SSS} | {level: <8} | {name}:{function}:{line} | {message}"
+  
+# Audit Logging
+audit:
+  enabled: true
+  log_file: "./logs/audit.log"
+  log_all_api_calls: true
+  
+# Security Settings
+security:
+  max_upload_size: 107374182400  # 100GB
+  allowed_extensions:
+    - ".E01"
+    - ".E02"
+    - ".E03"
+    - ".E04"
+    - ".E05"
+    - ".E06"
+    - ".E07"
+    - ".E08"
+    - ".E09"
+  command_timeout: 3600  # 1 hour max for commands
+  sanitize_inputs: true
+  
+# Background Jobs
+jobs:
+  enabled: true
+  broker_url: "redis://localhost:6379/0"
+  result_backend: "redis://localhost:6379/1"
+  
+# API Settings
+api:
+  prefix: "/api/v1"
+  docs_url: "/docs"
+  redoc_url: "/redoc"
+  cors_origins:
+    - "http://localhost:3000"
+    - "http://localhost:8080"
+  cors_allow_credentials: true
+  cors_allow_methods:
+    - "GET"
+    - "POST"
+    - "PUT"
+    - "DELETE"
+    - "OPTIONS"
+  cors_allow_headers:
+    - "Content-Type"
+    - "Authorization"
+    - "Accept"
+    - "Origin"
+    - "X-Requested-With"
+    
+# Pagination
+pagination:
+  default_page_size: 50
+  max_page_size: 1000
+  
+# Timeline Generation
+timeline:
+  timezone: "UTC"
+  include_types:
+    - "created"
+    - "modified"
+    - "accessed"
+    - "birth"  # MFT birth time
+    
+# Report Generation
+reports:
+  output_dir: "./storage/reports"
+  formats:
+    - "json"
+    - "pdf"
+  include_metadata: true
+  include_timeline: true
+  include_hashes: true

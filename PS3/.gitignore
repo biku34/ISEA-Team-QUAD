@@ -1,0 +1,59 @@
+# =============================================================================
+# NTFS Forensic Recovery Suite (PS3) - .gitignore
+# =============================================================================
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# ========================
+# IDE & Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# Backend
+# ========================
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/**/*.pyd
+backend/.env
+backend/*.db
+backend/*.sqlite
+backend/logs/*.log
+backend/storage/evidence/*
+backend/storage/artifacts/*
+backend/storage/carved/*
+backend/storage/recovered/*
+backend/storage/reports/*
+backend/storage/mount/*
+backend/storage/temp/*
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/htmlcov/
+backend/.coverage
+
+# ========================
+# Frontend
+# ========================
+frontend/.next/
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/out/
+frontend/build/
