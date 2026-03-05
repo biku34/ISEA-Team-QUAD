@@ -1,0 +1,249 @@
+{
+  "export_time": "2026-03-01T04:23:48.651793",
+  "total_alerts": 10,
+  "monitoring_paths": [
+    "E:\\"
+  ],
+  "alerts": [
+    {
+      "timestamp": "2026-03-01T04:23:31.300027",
+      "file_path": "E:\\normal_file.txt",
+      "event_type": "created",
+      "risk_score": 45,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 5.5 hours old (INVESTIGATE)"
+      ],
+      "si_timestamps": {
+        "creation": "2026-02-28T22:53:31.298000",
+        "modification": "2026-02-28T22:53:31.299000",
+        "access": "2026-02-28T22:53:31.299000"
+      },
+      "fn_timestamps": {
+        "creation": "2026-03-01T04:23:31.298447",
+        "modification": "2026-03-01T04:23:31.299022",
+        "access": "2026-03-01T04:23:31.299022"
+      },
+      "alert_id": 1
+    },
+    {
+      "timestamp": "2026-03-01T04:23:31.300531",
+      "file_path": "E:\\normal_file.txt",
+      "event_type": "modified",
+      "risk_score": 45,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 5.5 hours old (INVESTIGATE)"
+      ],
+      "si_timestamps": {
+        "creation": "2026-02-28T22:53:31.298000",
+        "modification": "2026-02-28T22:53:31.299000",
+        "access": "2026-02-28T22:53:31.299000"
+      },
+      "fn_timestamps": {
+        "creation": "2026-03-01T04:23:31.298447",
+        "modification": "2026-03-01T04:23:31.299022",
+        "access": "2026-03-01T04:23:31.299022"
+      },
+      "alert_id": 2
+    },
+    {
+      "timestamp": "2026-03-01T04:23:34.300766",
+      "file_path": "E:\\suspicious_file.txt",
+      "event_type": "created",
+      "risk_score": 45,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 5.5 hours old (INVESTIGATE)"
+      ],
+      "si_timestamps": {
+        "creation": "2026-02-28T22:53:34.299000",
+        "modification": "2026-02-28T22:53:34.299000",
+        "access": "2026-02-28T22:53:34.299000"
+      },
+      "fn_timestamps": {
+        "creation": "2026-03-01T04:23:34.299759",
+        "modification": "2026-03-01T04:23:34.299759",
+        "access": "2026-03-01T04:23:34.299759"
+      },
+      "alert_id": 3
+    },
+    {
+      "timestamp": "2026-03-01T04:23:34.301778",
+      "file_path": "E:\\suspicious_file.txt",
+      "event_type": "modified",
+      "risk_score": 45,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 5.5 hours old (INVESTIGATE)"
+      ],
+      "si_timestamps": {
+        "creation": "2026-02-28T22:53:34.299000",
+        "modification": "2026-02-28T22:53:34.299000",
+        "access": "2026-02-28T22:53:34.299000"
+      },
+      "fn_timestamps": {
+        "creation": "2026-03-01T04:23:34.299759",
+        "modification": "2026-03-01T04:23:34.299759",
+        "access": "2026-03-01T04:23:34.299759"
+      },
+      "alert_id": 4
+    },
+    {
+      "timestamp": "2026-03-01T04:23:37.448686",
+      "file_path": "E:\\suspicious_file.txt",
+      "event_type": "modified",
+      "risk_score": 65,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 1520.0 days old (SUSPICIOUS)"
+      ],
+      "si_timestamps": {
+        "creation": "2022-01-01T04:30:00",
+        "modification": "2026-02-28T22:53:34.299000",
+        "access": "2026-02-28T22:53:34.299000"
+      },
+      "fn_timestamps": {
+        "creation": "2022-01-01T10:00:00",
+        "modification": "2026-03-01T04:23:34.299759",
+        "access": "2026-03-01T04:23:34.299759"
+      },
+      "alert_id": 5
+    },
+    {
+      "timestamp": "2026-03-01T04:23:37.463003",
+      "file_path": "E:\\medium_file.txt",
+      "event_type": "created",
+      "risk_score": 45,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 5.5 hours old (INVESTIGATE)"
+      ],
+      "si_timestamps": {
+        "creation": "2026-02-28T22:53:37.461000",
+        "modification": "2026-02-28T22:53:37.461000",
+        "access": "2026-02-28T22:53:37.461000"
+      },
+      "fn_timestamps": {
+        "creation": "2026-03-01T04:23:37.461466",
+        "modification": "2026-03-01T04:23:37.461466",
+        "access": "2026-03-01T04:23:37.461466"
+      },
+      "alert_id": 6
+    },
+    {
+      "timestamp": "2026-03-01T04:23:37.463531",
+      "file_path": "E:\\medium_file.txt",
+      "event_type": "modified",
+      "risk_score": 45,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 5.5 hours old (INVESTIGATE)"
+      ],
+      "si_timestamps": {
+        "creation": "2026-02-28T22:53:37.461000",
+        "modification": "2026-02-28T22:53:37.461000",
+        "access": "2026-02-28T22:53:37.461000"
+      },
+      "fn_timestamps": {
+        "creation": "2026-03-01T04:23:37.461466",
+        "modification": "2026-03-01T04:23:37.461466",
+        "access": "2026-03-01T04:23:37.461466"
+      },
+      "alert_id": 7
+    },
+    {
+      "timestamp": "2026-03-01T04:23:39.460649",
+      "file_path": "E:\\suspicious_file.txt",
+      "event_type": "timestamp_modified",
+      "risk_score": 65,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 1520.0 days old (SUSPICIOUS)"
+      ],
+      "si_timestamps": {
+        "creation": "2022-01-01T04:30:00",
+        "modification": "2026-02-28T22:53:34.299000",
+        "access": "2026-02-28T22:53:34.299000"
+      },
+      "fn_timestamps": {
+        "creation": "2022-01-01T10:00:00",
+        "modification": "2026-03-01T04:23:34.299759",
+        "access": "2026-03-01T04:23:34.299759"
+      },
+      "alert_id": 8
+    },
+    {
+      "timestamp": "2026-03-01T04:23:40.635832",
+      "file_path": "E:\\medium_file.txt",
+      "event_type": "modified",
+      "risk_score": 45,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 17.5 hours old (INVESTIGATE)"
+      ],
+      "si_timestamps": {
+        "creation": "2026-02-28T10:53:40",
+        "modification": "2026-02-28T22:53:37.461000",
+        "access": "2026-02-28T22:53:37.461000"
+      },
+      "fn_timestamps": {
+        "creation": "2026-02-28T16:23:40",
+        "modification": "2026-03-01T04:23:37.461466",
+        "access": "2026-03-01T04:23:37.461466"
+      },
+      "alert_id": 9
+    },
+    {
+      "timestamp": "2026-03-01T04:23:44.538524",
+      "file_path": "E:\\medium_file.txt",
+      "event_type": "timestamp_modified",
+      "risk_score": 45,
+      "risk_level": "medium",
+      "discrepancies": [
+        "Creation timestamps differ by 5.5 hours (timezone/system)",
+        "Modification timestamps differ by 5.5 hours (timezone/system)",
+        "Access timestamps differ by 5.5 hours (timezone/system)",
+        "File claims to be 17.5 hours old (INVESTIGATE)"
+      ],
+      "si_timestamps": {
+        "creation": "2026-02-28T10:53:40",
+        "modification": "2026-02-28T22:53:37.461000",
+        "access": "2026-02-28T22:53:37.461000"
+      },
+      "fn_timestamps": {
+        "creation": "2026-02-28T16:23:40",
+        "modification": "2026-03-01T04:23:37.461466",
+        "access": "2026-03-01T04:23:37.461466"
+      },
+      "alert_id": 10
+    }
+  ]
+}

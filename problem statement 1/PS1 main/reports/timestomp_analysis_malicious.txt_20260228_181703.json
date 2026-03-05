@@ -1,0 +1,55 @@
+{
+  "scan_info": {
+    "target_path": "D:/VS Codes/NFSU Anti Forensics Hackathon/PS1/malicious.txt",
+    "scan_time": "2026-02-28T18:17:03.914594",
+    "tool_version": "1.0.0",
+    "analysis_type": "single_file"
+  },
+  "file_analysis": {
+    "file_path": "D:/VS Codes/NFSU Anti Forensics Hackathon/PS1/malicious.txt",
+    "filename": "malicious.txt",
+    "mft_analysis": {
+      "file_path": "D:/VS Codes/NFSU Anti Forensics Hackathon/PS1/malicious.txt",
+      "si_timestamps": {
+        "creation": "2021-01-01T09:00:00",
+        "modification": "2026-02-28T18:04:43.207850",
+        "access": "2026-02-28T18:06:15.550931",
+        "entry": "2021-01-01T09:00:00"
+      },
+      "fn_timestamps": {
+        "creation": "2021-01-01T09:00:01",
+        "modification": "2026-02-28T18:04:43.207850",
+        "access": "2026-02-28T18:06:15.550931",
+        "entry": "2021-01-01T09:00:00"
+      },
+      "discrepancies": []
+    },
+    "usn_analysis": {
+      "creation_events": [
+        {
+          "file_reference": 10517708397288858981,
+          "parent_reference": 12345,
+          "usn": 1,
+          "timestamp": "2026-02-28T16:17:03.903263",
+          "reason": 16,
+          "reasons": [
+            "FILE_CREATE"
+          ],
+          "source_info": 0,
+          "security_id": 0,
+          "file_attributes": 128,
+          "filename": "malicious.txt"
+        }
+      ],
+      "event_count": 1
+    },
+    "risk_assessment": {
+      "risk_level": "high",
+      "risk_score": 100,
+      "indicators": [
+        "SI creation time 45223.3 hours earlier than USN journal",
+        "Major timestamp discrepancy detected (>24 hours)"
+      ]
+    }
+  }
+}

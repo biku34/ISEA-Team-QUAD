@@ -1,0 +1,133 @@
+# ============================================================================
+# NFSU - NTFS Forensic Recovery System - Python Requirements
+# ============================================================================
+
+# Core Framework
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+gunicorn>=21.2.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+starlette>=0.27.0
+
+# Database
+sqlalchemy>=2.0.23
+alembic>=1.13.0
+
+# File Handling & Upload
+aiofiles>=23.2.1
+python-multipart>=0.0.6
+
+# Background Jobs & Task Queue
+celery>=5.3.4
+redis>=5.0.1
+
+# Configuration Management
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+
+# HTTP Client
+httpx>=0.25.2
+requests>=2.31.0
+
+# Logging
+loguru>=0.7.2
+
+# Date/Time Utilities
+python-dateutil>=2.8.2
+
+# Validation
+email-validator>=2.1.0
+
+# PDF Generation (for forensic reports)
+reportlab>=4.0.7
+pypdf2>=3.0.1
+
+# JSON/Data Processing
+orjson>=3.9.10
+
+# Security & Authentication
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
+cryptography>=41.0.7
+
+# Hashing (for evidence integrity verification)
+hashlib  # Built-in Python module
+
+# Testing
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+pytest-cov>=4.1.0
+
+# Development Tools
+black>=23.12.0
+flake8>=6.1.0
+mypy>=1.7.1
+
+# ============================================================================
+# EXTERNAL SYSTEM TOOLS REQUIRED (not Python packages)
+# ============================================================================
+# These must be installed on the system separately using apt/yum/brew
+#
+# 1. The Sleuth Kit (TSK) - Core forensic analysis toolkit
+#    - Installation: sudo apt-get install sleuthkit
+#    - Provides: mmls, fls, icat, istat, fsstat, etc.
+#    - Version: 4.11.0 or higher recommended
+#    - Purpose: Partition detection, file system analysis, file recovery
+#
+# 2. libewf (Expert Witness Format Tools)
+#    - Installation: sudo apt-get install libewf-tools ewf-tools
+#    - Provides: ewfmount, ewfinfo, ewfacquire
+#    - Version: 20140807 or higher
+#    - Purpose: Mount E01/EWF forensic images
+#
+# 3. Scalpel - File carving tool
+#    - Installation: sudo apt-get install scalpel
+#    - Config: /etc/scalpel/scalpel.conf
+#    - Version: 2.0 or higher
+#    - Purpose: Recover deleted files from unallocated space
+#
+# 4. Optional but Recommended:
+#    - afflib-tools: Advanced Forensic Format support
+#      - Installation: sudo apt-get install afflib-tools
+#    - bulk_extractor: Advanced data extraction
+#      - Installation: sudo apt-get install bulk-extractor
+#
+# Verification Commands:
+#    mmls -V              # Check Sleuth Kit version
+#    ewfinfo -V           # Check libewf version
+#    scalpel -V           # Check Scalpel version
+#
+# ============================================================================
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+#
+# 1. Install Python dependencies:
+#    pip install -r requirements.txt
+#
+# 2. Install system forensic tools (Ubuntu/Debian):
+#    sudo apt-get update
+#    sudo apt-get install -y sleuthkit libewf-tools ewf-tools scalpel
+#
+# 3. For RHEL/CentOS/Fedora:
+#    sudo yum install -y sleuthkit libewf ewf-tools scalpel
+#
+# 4. For macOS (using Homebrew):
+#    brew install sleuthkit libewf scalpel
+#
+# 5. Create necessary directories:
+#    mkdir -p forensics/{evidence,mounts,output,recovered,carved}
+#
+# 6. Set up configuration:
+#    cp config/config.example.yaml config/config.yaml
+#    # Edit config.yaml with your settings
+#
+# 7. Initialize database:
+#    alembic upgrade head
+#
+# 8. Run the application:
+#    uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+#
+# ============================================================================

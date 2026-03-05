@@ -1,0 +1,37 @@
+{
+  "scan_info": {
+    "target_path": "D:/VS Codes/Web_scrapping/harry.py",
+    "scan_time": "2026-02-28T18:02:30.888845",
+    "tool_version": "1.0.0",
+    "analysis_type": "single_file"
+  },
+  "file_analysis": {
+    "file_path": "D:/VS Codes/Web_scrapping/harry.py",
+    "filename": "harry.py",
+    "mft_analysis": {
+      "file_path": "D:/VS Codes/Web_scrapping/harry.py",
+      "si_timestamps": {
+        "creation": "2024-05-07T20:37:40.855576",
+        "modification": "2024-05-07T20:37:43.540215",
+        "access": "2025-03-29T20:56:06.347120",
+        "entry": "2024-05-07T20:37:40.855576"
+      },
+      "fn_timestamps": {
+        "creation": "2024-05-07T20:37:41.855576",
+        "modification": "2024-05-07T20:37:43.540215",
+        "access": "2025-03-29T20:56:06.347120",
+        "entry": "2024-05-07T20:37:40.855576"
+      },
+      "discrepancies": []
+    },
+    "usn_analysis": {
+      "creation_events": [],
+      "event_count": 0
+    },
+    "risk_assessment": {
+      "risk_level": "low",
+      "risk_score": 0,
+      "indicators": []
+    }
+  }
+}

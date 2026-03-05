@@ -1,0 +1,16 @@
+
+Scalpel version 1.60 audit file
+Started at Mon Feb  9 14:30:28 2026
+Command line:
+/usr/bin/scalpel -c config/scalpel.conf -o test_output test.img 
+
+Output directory: /home/kali/Desktop/project/ntfs pro/test_output
+Configuration file: config/scalpel.conf
+
+Opening target "/home/kali/Desktop/project/ntfs pro/test.img"
+
+The following files were carved:
+File		  Start			Chop		Length		Extracted From
+
+
+Completed at Mon Feb  9 14:30:28 2026
